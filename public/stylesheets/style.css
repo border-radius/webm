@@ -1,0 +1,28 @@
+body {
+  margin: 25px auto;
+  width: 500px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #48483e;
+  color: #cfd0c2;
+}
+
+body, a {
+  font-weight: bold;
+  color: #cfd0c2;
+  text-decoration: none;
+}
+
+.video {
+  margin: 50px 0;
+}
+
+video {
+  width: 500px;
+  height: 375px;
+  background: #000;
+}
+
+body > a {
+  display: block;
+  text-align: center;
+}

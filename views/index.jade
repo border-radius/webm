@@ -1,0 +1,14 @@
+title = "webm"
+extends layout
+
+block content
+  if skip
+    a(href="?skip=#{skip >= 10 ? skip - 10 : 0}") previous
+  each file in files
+    .video
+      p
+        a(href="videos/#{file}" target="_blank")= file
+      video(controls loop poster="posters/#{file}.png" preload="none")
+        source(src="videos/#{file}" type="video/webm")
+  if files.length == 10
+    a(href="?skip=#{skip + 10}") next
